@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.float{
+			text-align: center;
+		}
+     input{
+     	text-align: right;
+     	
+     }
+     .inputEq{
+     	border-bottom:none;
+     	height:20px;
+     	
+     }
+     .input{
+     	border-top:none;
+         height:20px;
+
+     }
+     .input:focus{
+     	outline: none;
+     }
+     .inputEq:focus{
+     	outline: none;
+     }
+    /* .float,h{
+     	display:flex;
+     	align-items: center;
+     	justify-content: center;
+     }*/
+     .btn-history{
+     	
+     	margin-left:50px;
+
+     }
+     
+     .button{
+     	width:220px;
+     	height:120px;
+     	background-color: black;
+     	color:white;
+     	
+     	margin:auto;
+     }
+     .history{
+     	background-color:red;
+     	width:20px;
+     	
+     }
+     
+	</style>
+</head>
+<body>
+	<div class="float">
+	<input type="text" class="inputEq" readonly><br>
+	<input type="text" class="input" value="0"><br>
+	<button onclick="clearVal()" class="btn-clear">c</button>
+	<button onclick="backVal()" class="btn-clear">x</button>
+	<button onclick="showHistory()" class="btn-history">H</button><br>
+	<button onclick="setVal('7')" class="btn-x">7</button>
+	<button onclick="setVal('8')" class="btn-x">8</button>
+	<button onclick="setVal('9')" class="btn-x">9</button>
+	<button onclick="setVal('+')" class="btn">+ </button><br>
+	<button onclick="setVal('4')" class="btn-x">4 </button>
+	<button onclick="setVal('5')" class="btn-x">5 </button>
+	<button onclick="setVal('6')" class="btn-x">6 </button>
+	<button onclick="setVal('-')" class="btn">-</button><br>
+	<button onclick="setVal('1')" class="btn-x">1</button>
+	<button onclick="setVal('2')" class="btn-x">2</button>
+	<button onclick="setVal('3')" class="btn-x">3</button>
+	<button onclick="setVal('%')" class="btn">%</button><br>
+	<button onclick="setVal(' 0')" class="btn-x"> 0</button>
+	
+	<button onclick="setVal('/')" class="btn">/</button>
+	<button onclick="getAns()" >=</button><br>
+	</div>
+	<div class="button">
+	<div class="history" onclick="removeVal()">
+  X</div>
+		<div class="history-div">
+		</div>
+	</div>
+	
+<script src="C:/Users/Abhishek/Desktop/fs_d_2022/js/prac.js"></script>
+</body>
+</html>
